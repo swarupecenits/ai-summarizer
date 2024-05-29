@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-
-import { copy, linkIcon, loader, tick,panda } from "../assets";
+import { copy, linkIcon, loader, tick, panda } from "../assets";
 import { useLazyGetSummaryQuery } from "../services/article";
+
 
 const Demo = () => {
     const [article, setArticle] = useState({

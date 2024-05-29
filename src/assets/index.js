@@ -4,6 +4,7 @@ import copy from './copy.svg'
 import logo from './logo.svg'
 import tick from './tick.svg'
 import panda from './panda.gif'
+import logo_sum from './sum_logo.png'
 
 export {
     linkIcon,
@@ -11,5 +12,6 @@ export {
     copy,
     logo,
     tick,
-    panda
+    panda,
+    logo_sum
 }
