@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { copy, linkIcon, loader, tick, panda } from "../assets";
+import { copy, linkIcon, enter, tick, panda } from "../assets";
 import { useLazyGetSummaryQuery } from "../services/article";
 
 
@@ -86,7 +86,8 @@ const Demo = () => {
                         type='submit'
                         className='submit_btn peer-focus:border-gray-700 peer-focus:text-gray-700 '
                     >
-                        <p>↵</p>
+
+                        <img className="w-4 p-0.2" src={enter} alt="" />
                     </button>
                 </form>
 
