@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css')
 /* 
   Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
 */
@@ -75,16 +76,18 @@
   @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
 
-.black_btn {
-  @apply rounded-full border font-semibold border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black;
-}
+/* .black_btn {
+  @apply rounded-full border font-semibold border-black bg-black py-2 px-5 text-sm text-white trand transition-all hover:bg-white hover:text-black;
+} */
+
+
 
 .head_text {
   @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl text-center;
 }
 
 .orange_gradient {
-  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-blue-500 via-indigo-600 to-sky-500 bg-clip-text text-transparent;
 }
 
 .desc {
@@ -113,4 +116,39 @@
 
 .summary_box {
   @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-4;
+}
+
+/* CSS styles */
+
+.shadow__btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+.shadow__btn {
+  background: rgb(0,140,255);
+  box-shadow: 0 0 25px rgb(0,140,255);
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px rgb(0,140,255),
+              0 0 25px rgb(0,140,255),
+              0 0 50px rgb(0,140,255),
+              0 0 100px rgb(0,140,255);
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .shadow__btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
 }

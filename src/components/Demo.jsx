@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-
-import { copy, linkIcon, loader, tick } from "../assets";
+import { copy, linkIcon, enter, tick, panda } from "../assets";
 import { useLazyGetSummaryQuery } from "../services/article";
+
 
 const Demo = () => {
     const [article, setArticle] = useState({
@@ -86,7 +86,8 @@ const Demo = () => {
                         type='submit'
                         className='submit_btn peer-focus:border-gray-700 peer-focus:text-gray-700 '
                     >
-                        <p>↵</p>
+
+                        <img className="w-4 p-0.2" src={enter} alt="" />
                     </button>
                 </form>
 
@@ -116,7 +117,7 @@ const Demo = () => {
             {/* Display Result */}
             <div className='my-10 max-w-full flex justify-center items-center'>
                 {isFetching ? (
-                    <img src={loader} alt='loader' className='w-20 h-20 object-contain' />
+                    <img src={panda} alt='' className='w-30 h-30 object-contain' />
                 ) : error ? (
                     <p className='font-inter font-bold text-black text-center'>
                         Well, that wasn't supposed to happen...
